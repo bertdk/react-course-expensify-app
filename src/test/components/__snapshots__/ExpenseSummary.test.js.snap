@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Viewing 1 expenses 1`] = `
+<div>
+  <p>
+    Total is 
+    $3,333.33
+     for 
+    1
+     expenses
+  </p>
+</div>
+`;
+
+exports[`Viewing 2 expenses 1`] = `
+<div>
+  <p>
+    Total is 
+    $7,777.77
+     for 
+    4
+     expenses
+  </p>
+</div>
+`;
