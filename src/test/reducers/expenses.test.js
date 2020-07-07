@@ -66,3 +66,35 @@ test('should not edit an expense', () => {
   const state = expensesReducer(expenses, action);
   expect(state).toEqual(expenses);
 });
+
+test('should set expenses', () => {
+  const expenses = [{
+    id: '33',
+    description: 'Foooood',
+    note: '',
+    amount: 100,
+    createdAt: moment(0).subtract(3, 'days').valueOf()
+  },{
+    id: '44',
+    description: 'Fish',
+    note: '',
+    amount: 190,
+    createdAt: moment(0).add(13, 'days').valueOf()
+  }];
+  const action = {
+    type: 'SET_EXPENSES',
+    expenses
+  };
+  const state = expensesReducer(expenses, action);
+  expect(state).toEqual(expenses);
+});
+
+test('should set expenses for one of the fixtures', () => {
+  const expensesA = [expenses[1]];
+  const action = {
+    type: 'SET_EXPENSES',
+    expenses: expensesA
+  };
+  const state = expensesReducer(expenses, action);
+  expect(state).toEqual(expensesA);
+});

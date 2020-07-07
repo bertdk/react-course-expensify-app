@@ -10,3 +10,5 @@ git commit -am "..." - Combo for git add and commit (for all modified files, new
 
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa_gmail
+
+lkjsdf
