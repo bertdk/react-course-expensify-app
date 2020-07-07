@@ -1,5 +1,4 @@
 import * as firebase from 'firebase';
-import expenses from '../test/fixtures/expenses';
 
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
@@ -10,6 +9,9 @@ const firebaseConfig = {
   messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
   appId: process.env.FIREBASE_APP_ID
 };
+
+
+// gtit test
 
 firebase.initializeApp(firebaseConfig);
 
